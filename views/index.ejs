@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ab</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY5p5e5PtJuJLl_nRpjefL0S094jdhEP8&libraries=places"></script> -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<style>
+
+    #two{
+        position: relative;
+    top: 100vh; 
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+    background-color:#fff;
+    }
+    #five{
+    position: relative;
+    width: 100%;
+    padding: 1vw;
+    height: 100vh;
+    background-color: #fff;
+}
+    #imgb{
+    width: 25vw;
+    height: 35vh;
+    background-image: url("https://images.unsplash.com/photo-1573229720442-2a57bd4a148f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    background-position: center;
+    background-size: cover;
+    margin-left: 3vw;
+   margin-top: 2vh;
+   display: flex;
+ position: relative;
+ overflow: hidden;
+ box-shadow: 7px 5px 7px rgb(99, 164, 239);
+   
+}
+#ig{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: rgb(13, 40, 61);
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 2vw;
+   
+}
+#imgb #ig:nth-child(1){
+    background-image: url("https://media.istockphoto.com/vectors/humidity-icon-isolated-on-blue-background-weather-and-meteorology-vector-id1092703438?k=20&m=1092703438&s=612x612&w=0&h=Qs41scRr94V71SWSQmYsm_yMsHhDpkYj7MSd8-Crwt4=");
+    background-position: center;
+    background-size: cover;
+
+}
+#imgb #ig:nth-child(2){
+    background-image: url("https://media.istockphoto.com/photos/thermometer-and-snowflakes-picture-id901153360?k=6&m=901153360&s=612x612&w=0&h=dIY0ww4t2xOHQDSyMAq31_5EfyHQntUUD7V28djxPrU=");
+    background-position: center;
+    background-size: cover;
+    left: 100%;
+}
+#imgb #ig:nth-child(3){
+    background-image: url("https://images.unsplash.com/photo-1620765970451-17271d5aeba9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80");
+    background-position: center;
+    background-size: cover;
+    left: 200%;
+}
+
+#five h1{
+    font-family: Gilroy;
+    font-size: 8vw;
+    line-height: 17vh;
+    color: rgb(26, 68, 107);
+    margin-left: 3vw;
+    font-weight: 550;
+}
+#imgbox{
+  
+    /* background-color: green; */
+    font-family: Gilroy;
+    color: rgb(38, 88, 136);
+   
+  position: absolute;
+  right: 10%;
+  top: 5vh;
+}
+#img1{
+    font-size:3.5vw;
+    font-weight: 500;
+}
+#img2{
+    font-size:3.5vw;
+    font-weight: 500;
+}
+#img3{
+    font-size:3.5vw;
+    font-weight: 500;
+}
+
+#icon{
+    display: flex;
+    font-size: 2.5vw;
+    font-weight: 500;
+    align-items: center;
+}
+#icon i:nth-child(1){
+    color: orangered;
+  mix-blend-mode: overlay;
+}
+#icon i:nth-child(2){
+    color:black;
+ 
+}
+#btn:hover{
+    background-color: rgb(11, 36, 71)!important;
+    
+}
+@media (max-width:550px){
+    #img1,#img2,#img3{
+        font-size: 5.5vw;
+    }
+    #icon{
+        font-size: 3.5vw;
+    }
+    #five h1{
+        font-size: 15vw;
+        line-height: 9vh;
+    }
+    #imgb{
+        width: 51vw;
+        height: 37vh;
+        margin-bottom: 2vw;
+    }
+    #imgbox{
+        right: 8vw;
+        top: 12%;
+    }
+    p#para.p-2{
+        display: block!important;
+    }
+    #ig{
+        font-size: 20px;
+    }
+  #h1{
+    font-size: 4vh !important;
+    text-align: center;
+  }
+   
+}
+</style>
+<body style="width:100%;height:100vh; object-fit: cover;background-position: center;background-repeat: no-repeat;background-image: url(https://images.unsplash.com/photo-1494564605686-2e931f77a8e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);color: black;">
+    <h1 style="position: absolute;left:50%;top: 4vh;transform:translate(-50%,0%);font-size: 6vh;" id="h1">Weather Forecast🌧</h1>
+    <div class="row justify-content-center align-self-center pnt-container">
+        <div class="main-container card d-flex justify-content-center align-self-center p-2" style="color: rgb(240, 229, 229);width: 20rem; box-shadow: 10px 10px 10px rgb(195, 195, 195);position: absolute;top: 20vh;text-align: center; background-size: cover;background-position: center;background-image: url(https://media.istockphoto.com/photos/perito-moreno-glacier-patagonia-argentina-picture-id521814058?k=20&m=521814058&s=170667a&w=0&h=GnoWTTjMD5_SerTz3C_G2jDTkjzwxGhkhwA7zheun34=);filter: brightness(95%);">
+            <h2 style="color: #fff;" class="big-hd card-header">Check Today's Weather🌧</h2>
+            <div class="form-container card-body">
+                <form action="/" method="post" class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input style="filter: brightness(115%);" id="location" type="text" name="citynames" class="cityNames form-control" placeholder="Enter a city name...">
+                        
+                    </div>
+                    <div class="btn-btn p-3">
+                        <button id="submit"disabled type="submit" class="submit-btn btn btn-info btn-lg"><small>Check Weather</small></button>
+                    </div>
+                </form>
+            
+            </div>
+            <div class="weather-info-container">
+              
+                <% if(data !== null){%>
+                <div class="display">
+                    
+                    <b><h2 style="background-color: rgba(241, 233, 233, 0);color:#fff;border: transparent; " class="list-group-item"><%=ctname + ", " + countryname %></h2></b>
+                    <h6 style="background-color: rgba(255, 0, 0, 0);color:#fff;border: transparent;" class="list-group-item"><%="temp: " + temp + "°C, "+"humidity: " + humidity +"%" %></h6>
+                    <h4 style="background-color: rgba(255, 0, 0, 0);color:#fff;border: transparent;" class="list-group-item" id="type"><%= icon %></h4>
+                    <div class="time" id="time"></div>
+                    
+                </div>
+               
+                <% }%>
+                <% if(error!==null){%>
+                <p><%=error %></p>
+                <% } %>
+            </div>
+        </div>
+
+    </div>
+    <div id="two">
+        <div id="five">
+            <div id="imgb">
+                <% if(data !== null){%>
+                <div style="text-align: center;" id="ig"><%="Humidity: " + humidity + "%" %><h5 style="color: rgba(0, 0, 0, 0.666);text-align: center;color: #fff;"><%=ctname + ", " + countryname %></h5></div>
+                <div style="text-align: center;" id="ig"><%="Temperature:" + temp + "°C"%><h5 style="color: rgba(0, 0, 0, 0.666);text-align: center;color: #fff;"><%=ctname + ", " + countryname %></h5></div>
+                <div style="text-align: center;" id="ig"><p>Sunrise Time: <span class="output"></span><h5 style="color: rgba(0, 0, 0, 0.666);color: rgb(11, 53, 105);text-align: center;"><%=ctname + ", " + countryname %></h5></div> 
+                <% }%>
+            </div>
+            <h1>Weather<br>ForeCasting</h1>
+            <button id="btn" style="background-color:rgb(37, 92, 143);color:#fff;width: fit-content;height: 6vh;border-radius: 20px;margin-left: 3.5vw;border: none;padding: 10px;">Weather Details</button>
+            <p id="para" style="color: rgb(38, 88, 136);display: none;" class="p-2">Weather is always an important factor affecting the activities in your life and work. Getting the weather forecast information will help you to be active in planning, choosing a time and place. It also helps you protect yourself and your family from the effects of the environment Weather Forecasting is crucial since it helps to determine future climate changes.</p>
+            <div id="imgbox">
+             <div data-index="0" id="img1">Humidity</div>
+             <div data-index="1" id="img2">Temperature</div>
+             <div data-index="2" id="img3">Sunrise</div>
+             
+             
+             <!-- <div id="icon">
+                 <i class="ri-restart-fill"></i>
+                 <i class="ri-play-circle-fill"></i> 
+                 <div id="most">The most expensive</div>
+             </div> -->
+           
+            </div>
+           
+        </div>
+        <footer style="font-size: 1rem;text-align: center;margin-top:2rem;">
+            <h6 style="color: rgb(38, 88, 136);position: absolute;bottom: 1vw;font-size: 2vh;right: 5vw;">©2022 Aditi Sharma,Inc.All rights reserved</h6 style="position: absolute;bottom:2%;right:5%">
+           </footer>
+    </div>
+    
+</div>
+<% if(data !== null){%>
+    <ul>
+        <br>
+        <ol><h6 id="sunrise"><%= sunrise %></h6></ol>
+        <ol><h1 style="color: rgba(0, 0, 0, 0.66);" id="temp"><%= temp %></h1></ol>
+        <ol><h5 style="color: rgba(0, 0, 0, 0.666);"><%=ctname + ", " + countryname %></h5></ol>
+    </ul>
+ 
+ <% }%>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body> 
+   
+
+<!-- <div style="width: 100%;height:60vh;background-color:#FCF6F1;position:absolute;top:100vh;" id="second" class="p-3">
+ <div style="text-align: center;" id="mid" class="p-3 d-flex justify-content-center align-items-center">
+ <h1 style="position: absolute;left:50%;transform:translate(-50%,0%)">Weather Forecast🌧</h1><hr>
+ <% if(data !== null){%>
+    <ul>
+        <br>
+        
+        <ol><h4 id="temp"><%= temp %></h4></ol>
+        <ol><h6><%=ctname + ", " + countryname %></h6></ol>
+    </ul>
+ 
+ <% }%>
+
+ </div> -->
+
+ <!-- <div id="details" class="d-flex justify-content-between align-items-center p-2">
+    <div style="width: 35vh;height:35vh;background-color:#0F90BB; box-shadow: 10px 10px 10px #014D71" id="center" class="d-flex justify-content-center align-items-center">
+       <ul>
+        <ol> <img style="width: 80%;height:80%;" src="https://icon-library.com/images/humidity-icon/humidity-icon-1.jpg" alt=""></ol>
+        <ol><h5>ji</h5></ol>
+       </ul>
+     </div>
+     <div style="width: 35vh;height:35vh;background-color:#0F90BB; box-shadow: 10px 10px 10px #014D71" id="center" class="p-3 d-flex justify-content-center align-items-center">
+        <img style="width: 80%;height:80%;" src="https://icon-library.com/images/humidity-icon/humidity-icon-1.jpg" alt="">
+     </div>
+     <div style="width: 35vh;height:35vh;background-color:#0F90BB; box-shadow: 10px 10px 10px #014D71" id="center" class="p-3 d-flex justify-content-center align-items-center">
+        <img style="width: 80%;height:80%;" src="https://icon-library.com/images/humidity-icon/humidity-icon-1.jpg" alt="">
+     </div>
+     <div style="width: 35vh;height:35vh;background-color:#0F90BB; box-shadow: 10px 10px 10px #014D71" id="center" class="p-3 d-flex justify-content-center align-items-center">
+        <img style="width: 80%;height:80%;" src="https://icon-library.com/images/humidity-icon/humidity-icon-1.jpg" alt="">
+     </div>
+ 
+    </div> -->
+  
+<script type="text/javascript">
+//   $(document).ready(function(){
+//     var autocomplete;
+//     var id='location';
+
+//     autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)),{
+//         types:['geocode']
+//     })
+//     google.maps.event.addListener(autocomplete,'placed_changed',function(){
+//         var near_place = autocomplete.getPlace();
+       
+//     })
+    
+//   })
+$( function() {
+    var availableTags = [
+      "Afghanistan",
+      "Albania",
+      "Algeria",
+      "Andhra Pradesh",
+      "Andorra",
+      "Argentina",
+      "Armenia",
+      "Assam",
+      "Australia",
+      "Austria",
+      "Bangladesh",
+      "Belgium",
+      "Belize",
+      "Bhopal",
+      "Bhutan",
+      "Bihar",
+      "Brazil",
+      "Bulgaria",
+      "Canada",
+      "Central African Republic",
+      "Chandigarh",
+      "Chhattisgarh",
+      "Chile",
+      "China",
+      "Colombia",
+      "Dehradun",
+      "Delhi",
+      "Denmark",
+      "Dubai",
+      "Egypt",
+      "France",
+      "Germany",
+      "Gujarat",
+      "Goa",
+      "Haryana",
+      "Himachal Pradesh",
+      "Hyderabad",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Iraq",
+      "Jabalpur",
+      "Jammu",
+      "Japan",
+      "Jharkhand",
+      "Karnataka",
+      "Kolkata",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Patna",
+      "Punjab",
+      "Rajasthan",  
+      "Sikkim",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ];
+    $( "#location" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  
+let inputElt = document.getElementById('location');
+let btn = document.getElementById('submit');
+
+inputElt.addEventListener("input", function(){
+  btn.disabled = (this.value === '');
+})
+
+    show();     
+    function show(){
+    if(document.getElementById('time')!=""){
+    document.querySelector('.display').style.display="block"
+    } 
+var today = new Date(); 
+var week=["Monday","Tuesday",'Wednesday','Thursday','Friday','Saturday','Sunday']
+var loct = today.getDay()
+var date = today.getDate()+ '/' +(today.getMonth() + 1)+ '/' + today.getFullYear()   ;
+let time=document.getElementById('time');
+time.innerText=`(${week[loct-1]}) ${date}`;
+let ty=document.getElementById('type').innerText;
+changewall(ty);
+let temperature=document.getElementById('temp').innerText;
+changewp(temperature);
+let sunrise=document.getElementById('sunrise').innerText;
+console.log(sunrise)
+let unix_timestamp = sunrise
+var date = new Date(unix_timestamp * 1000);
+var hours = date.getHours();
+var minutes = "0" + date.getMinutes();
+var seconds = "0" + date.getSeconds();
+var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+document.querySelector('.output').textContent = formattedTime;
+console.log(formattedTime);
+
+}
+
+   
+
+function changewall(url){
+  
+    if(url=='sunny')
+    document.querySelector(".main-container").style.backgroundImage=`url(https://images.unsplash.com/photo-1649690855006-4f29f439b8dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80)`;
+    else if(url=='haze')
+    document.querySelector(".main-container").style.backgroundImage=`url(https://images.unsplash.com/photo-1549492423-400259a2e574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1842&q=80)`;
+    else if(url=='mist')
+    document.querySelector(".main-container").style.backgroundImage=`url(https://images.unsplash.com/photo-1562644296-23b1879b73e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80)`;
+   
+    else if(url=='broken clouds')
+    document.querySelector(".main-container").style.backgroundImage=`url( https://external-preview.redd.it/uXph-aQl65LEMx6tzW_11oo3sUkJ5keWzhNx6VKuO_s.jpg?auto=webp&s=af33259ad0da522f2165033965cfd4dc99da07c1 )`;
+    else if(url=='few clouds')
+    document.querySelector(".main-container").style.backgroundImage=`url( https://images.unsplash.com/photo-1506761121438-a89f7835bae2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80 )`;
+    else if(url=='fog' || url=='smog')
+    document.querySelector(".main-container").style.backgroundImage=`url( https://images.unsplash.com/photo-1614894050992-b4ef959485a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80 )`;
+    else if(url=='smoke')
+    document.querySelector(".main-container").style.backgroundImage=`url( https://images.unsplash.com/photo-1549912870-27ef075b64ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80 )`;
+  
+    else if(url=='sky')
+    document.querySelector(".main-container").style.backgroundImage=`url( https://c1.wallpaperflare.com/preview/106/652/872/sky-blue-cloud-clear.jpg)`;
+  
+};
+
+function changewp(temp){
+    console.log(temp)
+    if(temp <= 16) document.body.style.backgroundImage =`url(https://images.unsplash.com/photo-1494564605686-2e931f77a8e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)`;
+    else if(temp <= 30) document.body.style.backgroundImage =`url(https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80)`;
+    else if(temp > 30) document.body.style.backgroundImage =`url(https://images.unsplash.com/photo-1487338442039-e2ca3b9924f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)`;
+}
+ 
+document.querySelectorAll("#imgbox").forEach(function(elem){
+elem.addEventListener("mouseover",function(dets){
+    console.log(dets.target.dataset.index)
+   gsap.to("#imgb #ig",{
+    
+    x:dets.target.dataset.index*-100+"%"
+   })
+ })
+})
+
+
+</script>
+
+</html>
+
+
